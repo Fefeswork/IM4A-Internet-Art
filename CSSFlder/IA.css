@@ -1,0 +1,124 @@
+  body{
+background: url(../images/png-transparent-medieval-european-border-background-gradient-color-european-style-complicated-thumbnail.png);
+background-size: cover;
+height: 100px;
+image-rendering: optimizeQuality;
+ }
+
+ /*The CSS code below is for the flip cards containers*/
+ .container {
+  position: relative;
+  width: 200px;
+  height: 260px;
+  margin: 0 auto 40px auto;
+
+  -webkit-perspective: 800px;
+     -moz-perspective: 800px;
+      -ms-perspective: 800px;
+       -o-perspective: 800px;
+          perspective: 800px;
+}
+.container .card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition:    -moz-transform 1s;
+      -ms-transition:     -ms-transform 1s;
+       -o-transition:      -o-transform 1s;
+          transition:         transform 1s;
+
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+       -o-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.container .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+       -o-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.container .card.flipped,
+.container .card .face2 {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+       -o-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.container .card .face .content1 {background-color: #7ad;}
+.container .card .face .content2 {background-color: #7da;}
+.container .card .face .content3 {background-color: #d7a;}
+.container .card .face .content4 {background-color: #fad997;}
+
+.store {
+  display: none;
+}
+.buttons {
+  text-align: center;
+}
+
+ /*The CSS code below is for the side navigation containers*/
+ 
+ /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  

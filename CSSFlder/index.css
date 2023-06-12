@@ -1,13 +1,30 @@
-.blink-style {
-    background: rgb(0, 0, 0);
-   }
 
+body{
+background: url(../images/png-transparent-medieval-european-border-background-gradient-color-european-style-complicated-thumbnail.png);
+background-size: cover;
+height: 100px;
+image-rendering: optimizeQuality;
+text-align: center;
+padding-top: 20em;
+padding-right: 2em;
+}
+
+/*adding custom font*/
+
+
+@font-face {
+    font-family: 'Becker';
+    src: url(..//Fonts/Becker.ttf);
+  }
+
+  
    a{
     text-align: center;
-    font-family: Verdana;
-    color: #ffc310;
+    text-decoration: none;
+    font-family: Becker;
+    color: black;
     animation: blink-text 1.9s linear infinite;
-    font-size: 6em;
+    font-size: 2em;
    }
 
    @keyframes blink-text{

@@ -1,6 +1,6 @@
 let slideIndex = [1,1];
 /* Class the members of each slideshow group with different CSS classes */
-let slideId = ["myScreenshots1", "myScreenshots2"]
+let slideId = ["myScreenshots", "myScreenshots2"]
 showSlides(1, 0);
 showSlides(1, 1);
 

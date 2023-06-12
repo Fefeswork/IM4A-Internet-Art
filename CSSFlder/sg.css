@@ -1,3 +1,10 @@
+
+body{
+background: url(../images/grunge-certificate-with-vintage-ornamental-frame.jpg);
+background-size: cover;
+height: 100px;
+image-rendering: optimizeQuality;
+}
 /* the CSS code below controls the styling fo the image slider*/
 
 * {box-sizing:border-box}
@@ -7,13 +14,16 @@
   max-width: 1000px;
   position: relative;
   margin:auto;
-  padding-right: 11%;
+  padding-right: 11em;
 }
+
 
 /* Hide the images by default */
 .myScreenshots {
   display: none;
+  padding-left: 15em;
 }
+
 
 /* Next & previous buttons */
 .prev, .next {
